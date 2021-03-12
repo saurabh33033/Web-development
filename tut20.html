@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: #e6cbf8;
+        }
+
+        .container{
+            background-color: rgb(231, 230, 241);
+            border: 3px solid rgb(64, 6, 119);
+            /* This is how we set margin/padding for top, right, left, bottom */
+            /* padding-top: 79px;
+            padding-bottom: 79px;
+            padding-left: 79px;
+            padding-right: 79px; */
+
+             /* padding= top, right, bottom, left */
+            /* padding: 34px 56px 6px 78px; */
+
+            /* padding: y=(top, bottom) x=(right, left) */
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 19px;
+            width: 533px;
+            box-sizing
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sit aspernatur dignissimos magnam perferendis beatae eius dolores, est fugit molestias iure, itaque quas.
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sit aspernatur dignissimos magnam perferendis beatae eius dolores, est fugit molestias iure, itaque quas.
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sit aspernatur dignissimos magnam perferendis beatae eius dolores, est fugit molestias iure, itaque quas.
+        </p>
+    </div>
+</body>
+</html>
