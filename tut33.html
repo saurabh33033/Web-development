@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            background: url(https://source.unsplash.com/collection/190727/1600x900) no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        section {
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            align-items: center;
+            margin: 90px 200px;
+            justify-content: center;
+        }
+
+        /* section::after{
+            content: "This is a content"
+        } */
+        .nevigation {
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 15px 22px;
+            /* margin: 5px; */
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nevigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Content Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1> Welcome to Coding World </h1>
+        <h4>Powered By Rahul Kuta</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi distinctio nemo, et ea ex quam
+            accusamus nostrum reiciendis ratione sed mollitia explicabo debitis modi perspiciatis doloremque dolorem! At
+            atque id error esse autem?</p>
+    </section>
+</body>
+
+</html>
