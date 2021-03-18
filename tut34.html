@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: cyan;
+        
+        /* box-shadow: 7px 6px rgba(106, 194, 235, 0.63); */
+        /* box-shadow: -7px -6px rgba(106, 194, 235, 0.63); */
+        /* box-shadow: 7px 6px 10px rgba(54, 236, 78, 0.63); */
+        /* box-shadow: -7px -6px 10px rgba(54, 236, 78, 0.63); */
+        /* box-shadow: -7px -6px 10px 10px rgba(54, 236, 78, 0.63); */
+        /* box-shadow: inset 7px 6px  rgba(54, 236, 78, 0.63); */
+        box-shadow: 7px 6px  rgba(54, 236, 78, 0.63), 10px 9px red;
+    }
+    .card h2 {
+        text-shadow: 4px 3px rgb(243, 242, 242);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, quae delectus tenetur corrupti explicabo in ut. Reprehenderit delectus aut adipisci neque aliquid animi maiores iure recusandae, nisi temporibus cumque ducimus inventore voluptates? Quos, mollitia?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, quae delectus tenetur corrupti explicabo in ut. Reprehenderit delectus aut adipisci neque aliquid animi maiores iure recusandae, nisi temporibus cumque ducimus inventore voluptates? Quos, mollitia?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, quae delectus tenetur corrupti explicabo in ut. Reprehenderit delectus aut adipisci neque aliquid animi maiores iure recusandae, nisi temporibus cumque ducimus inventore voluptates? Quos, mollitia?</p>
+        </div>
+    </div>
+</body>
+</html>
