@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids + Media Quaries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                "navbar navbar navbar navbar"
+                "section section section aside"
+                "footer footer footer footer"
+            ;
+        }
+
+
+        @media only screen and (max-width: 300px) {
+            .container {
+                    grid-template-areas:
+                        "navbar navbar navbar navbar"
+                        "section section section section"
+                        "aside aside aside aside"
+                        "footer footer footer footer"
+                    ;
+                }
+
+                body {
+                    background-color: red;
+                }
+
+                aside {
+                    display: none;
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                }
+
+
+            }
+
+            @media only screen and (max-width: 500px) and (min-width: 300px) {
+                body {
+                    background-color: blue;
+                }
+
+                .container {
+                    grid-template-areas:
+                        "navbar navbar navbar navbar"
+                        "section section section section"
+                        "aside aside aside aside"
+                        "footer footer footer footer"
+                    ;
+                }
+
+                aside {
+                    display: none;
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            @media (max-width: 800px) and (min-width: 500px) {
+                body {
+                    background-color: yellow;
+                }
+
+                .container {
+                    grid-template-areas:
+                        "navbar navbar navbar navbar"
+                        "section section section section"
+                        "aside aside aside aside"
+                        "footer footer footer footer"
+                    ;
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            @media (min-width: 800px) {
+                body {
+                    background-color: green;
+                }
+            }
+
+            .bdr {
+                border: 2px solid black;
+                padding: 23px;
+                background-color: wheat;
+            }
+
+            nav {
+                grid-area: navbar;
+            }
+
+            section {
+                grid-area: section;
+            }
+
+            aside {
+                grid-area: aside;
+            }
+
+            footer {
+                grid-area: footer;
+                text-align: center;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+
+        <section class="bdr">
+            <h2>Learn CSS in hindi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sequi esse reprehenderit minus expedita quasi perspiciatis repudiandae ipsum odio ducimus rem earum consequuntur saepe corporis voluptatem, soluta rerum harum eaque natus iusto nihil labore aliquam iste eum? Deleniti beatae recusandae ipsam quia eaque ipsa deserunt odio pariatur, quas nesciunt voluptate sunt suscipit sed totam animi quaerat numquam reiciendis in corporis laborum labore! Voluptatibus incidunt iusto cumque, voluptatem nam odit unde, ducimus quis eius quasi sint esse reprehenderit accusamus assumenda iste quae suscipit autem? Laborum aliquam, sunt aspernatur natus esse possimus ex, ducimus veniam officia porro deleniti. Quasi, quam. Sit recusandae sint inventore, rem placeat numquam consequatur accusamus sapiente, architecto officiis suscipit dicta repellat quasi pariatur est saepe excepturi neque veritatis porro minima temporibus? Molestias, vero. Temporibus maxime veniam adipisci amet et! Facere quos, dicta accusantium odio cum harum aut laborum quae ratione placeat? Eveniet corrupti quidem nostrum eius culpa reiciendis.</p>
+        </section>
+
+        <aside class="bdr">
+            <h1>More About Us</h1>
+        </aside>
+
+        <footer class="bdr">All copyright reserved 3030</footer>
+
+    </div>
+</body>
+
+</html>
