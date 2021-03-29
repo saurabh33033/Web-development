@@ -30,12 +30,13 @@
         var substr = str.slice(1,8);
         //This can take negative value.
         //This take value of given value less than 1.
-        //It means if value is str.slice(1,8) than it take of value from 1 to 7 only.
-
+        //It means if value is str.slice(1,8) than it take value from 1 to 7 only.
+        // Its follow index that's mean it value start form zero 0
         var substr1 = str.substring(1,8); 
         //This cannot take negative value.
         //This also take value of given value less than 1.
-        //It means if value is str.slice(1,8) than it take of value from 1 to 7 only.
+        //It means if value is str.substring(1,8) than it take value from 1 to 7 only.
+        // Its follow index that's mean it value start form zero 0
         
         var substr2 = str.substr(1,8); 
         // This take value of exact given value.
@@ -54,7 +55,7 @@
         console.log(strwithwhitespaces)
         console.log(strwithwhitespaces.trim())
 
-        var char2 = str.charAt(3)
+        var char2 = str.charAt(2)
         var char3 = str.charCodeAt(3)
         // It show the UTF-8 language code of entered value
         // Example in UTF-8 language 's' = '115'
