@@ -4,35 +4,21 @@ const path = require("path")
 const app = express();
 const port = 80;
 
-//For serving static file.
-app.use("/static", express.static("static"))
+// Express Specific Stuff 
+app.use("/static", express.static("static")) //For serving static file.
 
-//Set template engine as pug.
-app.set('view engine', 'pug')
+// PUG Specific Stuff 
+app.set('view engine', 'pug') //Set template engine as pug.
+app.set('views', path.join(__dirname, 'views')) // Set the views directory
 
-// Set the views directory
-app.set('views', path.join(__dirname, 'views'))
-
-// Our pug demo endpoint
-app.get("/demo", (req, res)=>{
-    res.status(200).render("demo", {title:"Hey Saurabh", message:"Nice to meet you."})
+// Endpoint
+app.get("/", (req, res)=>{
+    const con = "This is best content available on internet so use it."
+    const params = {title:"PUBG is the best game.", content: con}
+    res.status(200).render("index.pug", params)
 })
 
-app.get("/", (req, res) =>{
-    res.send("This is my first express app with harry.")
-});
-
-app.get("/about", (req, res) =>{
-    res.send("This about page of my first express app with harry.")
-});
-
-app.post("/about", (req, res) =>{
-    res.send("This post request of about page of my first express app with harry.")
-});
-app.get("/this", (req, res) =>{
-    res.status(404).send("This page is not found.")
-});
-
-app.listen(port, ()=>{
+// Start the Server 
+app.listen(port, () => {
     console.log(`This is application succesfully start on ${port}`)
 });
