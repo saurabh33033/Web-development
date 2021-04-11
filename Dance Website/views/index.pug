@@ -1,0 +1,31 @@
+//- index.pug
+doctype html
+html
+  head
+    title Saurabh Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+            
+    section#introSection
+        div Welcome to Saurabh's Dance Academy
+        div.small Eat Sleep Dance Repeat
+    
+    section#missionSection
+        h1 Our Missions
+
+    section#sponsorSection
+        h1 Our Sponsor 
+
+    footer#footer
+        | Our footer here
+
+    script
+      include ../static/index.js
