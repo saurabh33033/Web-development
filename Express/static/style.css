@@ -6,7 +6,7 @@
 
 body::before{
     content: "";
-    height: 800px;
+    height: 700px;
     width: 100%;
     top: 0px;
     position: absolute;
@@ -53,9 +53,9 @@ p{
 
 input, textarea{
     display: block;
-    padding: 3px;
-    margin: 25px auto;
-    width: 60%;
+    padding: 5px;
+    margin: 15px auto;
+    width: 40%;
     outline: none;
     border-radius: 5px;
     border: 2px solid black;
@@ -65,7 +65,7 @@ input, textarea{
     margin: 4px auto;
     display: block;
     padding: 12px 20px;
-    background: grey;
+    background: rgb(73, 68, 68);
     color: white;
     font-weight: bold;
     font-size: 15px;

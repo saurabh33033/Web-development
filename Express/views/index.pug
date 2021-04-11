@@ -26,12 +26,12 @@ style
             | #{content}
         </p> -->
 
-        <form action="/" id="contact">
-            <input type="myName" id="name" placeholder="Enter your Name">
-            <input type="myAge" id="age" placeholder="Enter your Age">
-            <input type="myGender" id="gender" placeholder="Enter your Gender">
-            <textarea name="myAddress" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
-            <textarea name="myMessage" id="more" cols="30" rows="10" placeholder="More About You"></textarea>
+        <form action="/" method="post" id="contact">
+            <input name="name" type="text" id="name" placeholder="Enter your Name">
+            <input name="age" type="number" id="age" placeholder="Enter your Age">
+            <input name="gender" type="text" id="gender" placeholder="Enter your Gender">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="More About You"></textarea>
             <button class="btn">Submit</button>
         </form>
 
