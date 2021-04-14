@@ -1,0 +1,47 @@
+extends base.pug
+
+block script
+    script(src="/static/index.js") 
+
+block style
+    style
+        include ../static/style.css
+    
+block content
+    section#introSection
+        div Welcome to Saurabh's Dance Academy
+        div.small Eat Sleep Dance Repeat
+    
+    section#missionSection
+        h2 Our Missions
+        div.card
+            h3 Dance perfection 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best academy of the universe
+
+        div.card
+            h3 Expert Teching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p This is the best academy of the universe
+
+    section#sponsorSection
+        h2 Our Sponsor 
+        div#sponsors
+            img(src="/static/img/logo1.png", alt="sponsor image" class="spimg")
+            img(src="/static/img/logo2.png", alt="sponsor image" class="spimg")
+            img(src="/static/img/logo3.png", alt="sponsor image" class="spimg")
+            img(src="/static/img/logo4.png", alt="sponsor image" class="spimg")
